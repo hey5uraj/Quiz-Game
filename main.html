@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="CSS/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <form  name="quiz" id="quiz">
+		<div class="my-width">
+			<i class="fa-brands fa-instalod"></i>
+				<h1>Quiz Game</h1>
+			<i class="fa-brands fa-instalod"></i>
+		</div>
+        <h2>Round 1</h2>
+        <div>
+            <h3>1. HTML stands for -</h3>
+            <p><input type="radio" name="que1" value="q1-o1">A. HighText Machine Language</p>
+            <p><input type="radio" name="que1" value="q1-o2">B. HyperText and links Markup Language</p>
+            <p><input type="radio" name="que1" value="q1-o3">C. HyperText Markup Language</p>
+            <p><input type="radio" name="que1" value="q1-o4">D. None of these</p>
+        </div>
+        <div>
+            <h3>2. The correct sequence of HTML tags for starting a webpage is -</h3>
+            <p><input type="radio" name="que2" value="q2-o1">A. Head, Title, HTML, body</p>
+            <p><input type="radio" name="que2" value="q2-o2">B. HTML, Body, Title, Head</p>
+            <p><input type="radio" name="que2" value="q2-o3">C. HTML, Head, Title, Body</p>
+            <p><input type="radio" name="que2" value="q2-o4">D. HTML, Head, Title, Body</p>
+        </div>
+        <div>
+            <h3>3. Which of the following attribute is used to provide a unique name to an element?-</h3>
+            <p><input type="radio" name="que3" value="q3-o1">A. Class</p>
+            <p><input type="radio" name="que3" value="q3-o2">B. Id</p>
+            <p><input type="radio" name="que3" value="q3-o3">C. Type</p>
+            <p><input type="radio" name="que3" value="q3-o4">D. None of these</p>
+        </div>
+        <div>
+            <h3>4. What are the types of unordered or bulleted list in HTML?</h3>
+            <p><input type="radio" name="que4" value="q4-o1">A. Disc, Square, Triangle</p>
+            <p><input type="radio" name="que4" value="q4-o2">B. Polygon, Triangle, Circle</p>
+            <p><input type="radio" name="que4" value="q4-o3">C. Disc, Circle, Square</p>
+            <p><input type="radio" name="que4" value="q4-o4">D. All of the above</p>
+        </div>
+        <div>
+            <h3>5. The tags in HTML are -</h3>
+            <p><input type="radio" name="que5" value="q5-o1">A. Case-sensitive</p>
+            <p><input type="radio" name="que5" value="q5-o2">B. In upper case</p>
+            <p><input type="radio" name="que5" value="q5-o3">C. Not case sensitive</p>
+            <p><input type="radio" name="que5" value="q5-o4">D. In lowercase</p>
+        </div>
+        <div class="design-btn">
+            <input type="button" name="" value="Round 1 Done"  id="button" onclick="check()">
+        </div>
+        <p id="result"></p>
+</form>
+
+        <form name="quiz2" id="quiz2" class="s-hide" >
+			<h2>Round 2</h2>
+			<div>
+				<h3>1. What is the capital of France?</h3>
+					<p><input type="radio" name="que6" value="London"> London</p>
+					<p><input type="radio" name="que6" value="Paris"> Paris</p>
+					<p><input type="radio" name="que6" value="Berlin"> Berlin</p>
+					<p><input type="radio" name="que6" value="Madrid"> Madrid</p>
+			</div>
+			<div>
+				<h3>2. What is the largest planet in our solar system?</h3>
+					<p><input type="radio" name="que7" value="Jupiter"> Jupiter</p>
+					<p><input type="radio" name="que7" value="Earth"> Earth</p>
+					<p><input type="radio" name="que7" value="Mars"> Mars</p>
+					<p><input type="radio" name="que7" value="Saturn"> Saturn</p>
+				</div>
+			<div>
+				<h3>3. What is the highest mountain in the world?</h3>
+					<p><input type="radio" name="que8" value="Mount Everest"> Mount Everest</p>
+					<p><input type="radio" name="que8" value="K2"> K2</p>
+					<p><input type="radio" name="que8" value="Kilimanjaro"> Kilimanjaro</p>
+					<p><input type="radio" name="que8" value="Matterhorn"> Matterhorn</p>
+			</div>
+			<div>
+				<h3>4. Which planet is known as the 'Watery Planet' ?</h3>
+					<p><input type="radio" name="que9" value="Mercury"> Mercury</p>
+					<p><input type="radio" name="que9" value="Earth"> Earth</p>
+					<p><input type="radio" name="que9" value="Mars"> Mars</p>
+					<p><input type="radio" name="que9" value="Jupiter"> Jupiter</p>
+			</div>
+			<div>
+				<h3>5. Which of the following is indicated by the colour of a star?</h3>
+					<p><input type="radio" name="que10" value="Weight"> Weight</p>
+					<p><input type="radio" name="que10" value="Distance"> Distance</p>
+					<p><input type="radio" name="que10" value="Temperature"> Temperature</p>
+					<p><input type="radio" name="que10" value="Size"> Size</p>
+			</div>
+			<div class="design-btn">
+			        <input type="button" name="" value="Round 2 Done"  id="button2" onclick="check2()">
+            </div>
+            <p id="result2"></p>
+
+    </form>
+        <form name="quiz3" id="quiz3" class="s-hide">
+			<h2>Round 3</h2>
+			<div>
+				<h3>1. The full form of CSS is:</h3>
+					<p><input type="radio" name="que11" value="q11-o1"> Cascade style sheets</p>
+					<p><input type="radio" name="que11" value="q11-o2"> Color and style sheets</p>
+					<p><input type="radio" name="que11" value="q11-o3"> Cascading style sheets</p>
+					<p><input type="radio" name="que11" value="q11-o4"> None of the above</p>
+			</div>
+			<div>
+				<h3>2. The property in CSS used to change the background color of an element is -</h3>
+					<p><input type="radio" name="que12" value="q12-o1"> bgcolor</p>
+					<p><input type="radio" name="que12" value="q12-o2"> color</p>
+					<p><input type="radio" name="que12" value="q12-o3"> background-color</p>
+					<p><input type="radio" name="que12" value="q12-o4"> All of the above</p>
+				</div>
+			<div>
+				<h3>3. The HTML attribute used to define the inline styles is -</h3>
+					<p><input type="radio" name="que13" value="q13-o1"> style</p>
+					<p><input type="radio" name="que13" value="q13-o2"> styles</p>
+					<p><input type="radio" name="que13" value="q13-o3"> class</p>
+					<p><input type="radio" name="que13" value="q13-o4"> All of the above</p>
+			</div>
+			<div>
+				<h3>4. The CSS property used to make the text bold is -</h3>
+					<p><input type="radio" name="que14" value="q14-o1"> font-weight : bold</p>
+					<p><input type="radio" name="que14" value="q14-o2"> weight: bold</p>
+					<p><input type="radio" name="que14" value="q14-o3"> font: bold</p>
+					<p><input type="radio" name="que14" value="q14-o4"> style: bold</p>
+			</div>
+			<div>
+				<h3>5. The CSS property used to specify the transparency of an element is -</h3>
+					<p><input type="radio" name="que15" value="q15-o1"> opacity</p>
+					<p><input type="radio" name="que15" value="q15-o2"> filter</p>
+					<p><input type="radio" name="que15" value="q15-o3"> visibility</p>
+					<p><input type="radio" name="que15" value="q15-o4"> overlay</p>
+			</div>
+			<div class="design-btn">
+			        <input type="button" name="" value="Round 3 Done"  id="button3" onclick="check3()">
+            </div>
+            <p id="result3"></p>
+
+    </form>
+	<input type="button" name="" value="Total marks"  id="button3" onclick="totalmarks()">
+	<p id="total"></p>
+    
+
+    <script src="Script/main.js"></script>
+
+</body>
+</html>
